@@ -1,15 +1,34 @@
-export async function invokeLLM({ prompt, response_json_schema = null }) {
-  const res = await fetch(
-    "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" +
-      import.meta.env.VITE_GEMINI_API_KEY,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ role: "user", parts: [{ text: prompt }] }],
-      }),
-    }
-  );
-  const data = await res.json();
-  return data?.candidates?.[0]?.content?.parts?.[0]?.text || "No response";
+const BASE_URL = "http://127.0.0.1:8000";
+
+export async function getGoals() {
+  const res = await fetch(`${BASE_URL}/goals`);
+  if (!res.ok) throw new Error("Failed to fetch goals");
+  return res.json();
+}
+
+export async function getRecommendations({
+  goalId,
+  priorEducation,
+  earnedCredits,
+  preferOnline,
+  useAI = false,
+}) {
+  const endpoint = useAI ? "/recommendations/ai" : "/recommendations";
+  const res = await fetch(`${BASE_URL}${endpoint}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      goalId,
+      priorEducation,
+      earnedCredits,
+      preferOnline,
+    }),
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`Request failed: ${res.status} - ${text}`);
+  }
+
+  return res.json();
 }
