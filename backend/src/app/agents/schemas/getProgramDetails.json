@@ -1,0 +1,11 @@
+{
+  "name": "getProgramDetails",
+  "description": "Fetch a single program by program_id from the in-repo catalog for grounding and citations.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "program_id": { "type": "integer" }
+    },
+    "required": ["program_id"]
+  }
+}

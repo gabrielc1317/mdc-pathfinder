@@ -1,0 +1,12 @@
+{
+  "name": "estimateCost",
+  "description": "Compute cost for a program using the in-repo cost_model.json and remaining credits.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "program_id": { "type": "integer" },
+      "remaining_credits": { "type": "integer", "minimum": 0 }
+    },
+    "required": ["program_id", "remaining_credits"]
+  }
+}

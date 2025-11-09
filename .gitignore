@@ -1,0 +1,29 @@
+# --- Frontend (exclude) ---
+frontend/
+**/node_modules/
+**/dist/
+**/.next/
+**/.vercel/
+**/.cache/
+
+# --- Virtual env / Python caches ---
+.venv/
+backend/.venv/
+**/__pycache__/
+**/*.pyc
+
+# --- Local env & secrets ---
+*.env
+backend/.env
+.env.local
+.env.*.local
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Data: keep seeds, ignore exports/tmp ---
+data/exports/
+data/tmp/
