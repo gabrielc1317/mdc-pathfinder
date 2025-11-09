@@ -41,7 +41,7 @@ export default function Home() {
   const [conversation, setConversation] = useState([
     {
       role: "assistant",
-      content: "Hi! I'm your academic pathway advisor. I'll help you create a personalized educational plan to achieve your career goals.\n\nTo get started, tell me:\n- What career are you interested in?\n- What's your current education level?\n- What degree level do you want to achieve?\n- Which colleges are you interested in?\n\nFeel free to share as much or as little as you want, and I'll ask follow-up questions!",
+      content: "Hi! I'm your ElevatePath career advisor. I'll help you create a personalized educational plan to achieve your career goals.\n\nTo get started, tell me:\n- • What career are you interested in?\n- • What's your current education level?\n- • What degree level do you want to achieve?\n- • Which colleges are you interested in?\n\nFeel free to share as much or as little as you want, and I'll ask follow-up questions!",
       timestamp: new Date().toISOString()
     }
   ]);
@@ -366,7 +366,7 @@ Be specific, realistic, and use actual course naming conventions from Florida co
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <div className="min-h-screen bg-linear-to-br from-purple-900 via-blue-50 to-white">
       <div className="max-w-5xl mx-auto px-4 py-12 md:py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -374,11 +374,12 @@ Be specific, realistic, and use actual course naming conventions from Florida co
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-900 to-blue-700 shadow-2xl shadow-blue-900/30 mb-6">
-            <Compass className="w-10 h-10 text-amber-400" />
+          <div className="flex flex-row justify-center w-full mb-10">
+            <img src="./ElevatePath_logo_flat.png" alt="ElevatePath Logo" className="h-30" />
           </div>
+          
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4 tracking-tight">
-            Chart Your Academic Journey
+            Find Your Academic Journey
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Chat with our AI advisor to create your personalized educational pathway

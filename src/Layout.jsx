@@ -67,17 +67,18 @@ export default function Layout({ children }) {
         <Sidebar className="border-r border-slate-200/60 bg-white/80 backdrop-blur-sm">
           <SidebarHeader className="border-b border-slate-200/60 p-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-900/20">
+              <img src="./ElevatePath_logo_flat.png" alt="ElevatePath logo" />
+              {/* <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-900/20">
                 <Compass className="w-6 h-6 text-amber-400" />
               </div>
               <div>
                 <h2 className="font-bold text-xl text-slate-900 tracking-tight">
-                  Pathway
+                  ElevatePath
                 </h2>
                 <p className="text-xs text-slate-500 font-medium">
-                  Chart Your Academic Journey
+                  Find Your Academic Journey
                 </p>
-              </div>
+              </div> */}
             </div>
           </SidebarHeader>
 
@@ -129,7 +130,7 @@ export default function Layout({ children }) {
                   variant="ghost"
                   size="sm"
                   onClick={handleLogout}
-                  className="w-full justify-start text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+                  className="flex flex-row justify-center items-center w-full text-slate-600 hover:text-slate-900 hover:bg-slate-100 cursor-pointer"
                 >
                   <LogOut className="w-4 h-4 mr-2" />
                   Sign Out
@@ -142,7 +143,7 @@ export default function Layout({ children }) {
                 onClick={() =>
                   setUser({ full_name: "Guest User", email: "guest@example.com" })
                 }
-                className="w-full"
+                className="flex flex-row justify-center items-center w-full text-slate-600 hover:text-slate-900 hover:bg-slate-100 cursor-pointer"
               >
                 Sign In
               </Button>

@@ -34,7 +34,7 @@ export default function ChatInput({ onSend, disabled, placeholder }) {
       <Button
         onClick={handleSend}
         disabled={!message.trim() || disabled}
-        className="h-[60px] px-6 bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600"
+        className="h-[60px] px-6 bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white cursor-pointer"
       >
         {disabled ? (
           <Loader2 className="w-5 h-5 animate-spin" />

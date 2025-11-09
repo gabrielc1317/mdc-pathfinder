@@ -60,7 +60,7 @@ export default function MyPathways() {
 
             <Button
               onClick={() => navigate(createPageUrl("Home"))}
-              className="bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 shadow-lg"
+              className="flex flex-row text-white items-center justify-center bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600"
             >
               <Plus className="w-4 h-4 mr-2" />
               Create New Pathway
@@ -85,14 +85,16 @@ export default function MyPathways() {
                 <p className="text-slate-600 mb-6 max-w-md mx-auto">
                   Start your academic journey by creating your first personalized pathway
                 </p>
-                <Button
-                  onClick={() => navigate(createPageUrl("Home"))}
-                  size="lg"
-                  className="bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600"
-                >
-                  <Plus className="w-5 h-5 mr-2" />
-                  Create Your First Pathway
-                </Button>
+                <div className="flex flex-row justify-center w-full">
+                  <Button
+                    onClick={() => navigate(createPageUrl("Home"))}
+                    size="lg"
+                    className="flex flex-row text-white items-center justify-center bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600"
+                  >
+                    <Plus className="w-5 h-5 mr-2" />
+                    Create Your First Pathway
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </motion.div>
