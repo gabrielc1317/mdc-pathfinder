@@ -1,0 +1,23 @@
+{
+  "by_program": {
+    "cs_as_001": [
+      {
+        "to_institution": "Florida International University",
+        "to_program": "BS in Computer Science",
+        "notes": "MDC AS → FIU BS via statewide articulation. Junior standing if lower-division prereqs met."
+      },
+      {
+        "to_institution": "University of Florida (UF Online)",
+        "to_program": "BS in Computer Science",
+        "notes": "Competitive admission; Calc I–II + Discrete recommended."
+      }
+    ],
+    "me_aa_001": [
+      {
+        "to_institution": "Florida State University",
+        "to_program": "BS in Mechanical Engineering",
+        "notes": "Calc I–III + Physics I–II required; Chemistry strongly recommended."
+      }
+    ]
+  }
+}

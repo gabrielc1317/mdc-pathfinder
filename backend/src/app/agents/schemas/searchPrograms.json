@@ -1,0 +1,14 @@
+{
+  "name": "searchPrograms",
+  "description": "Return candidate MDC programs for a goal and user constraints from the in-repo catalog. Must only return program_ids that exist in programs_mdc.csv.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "goalId": { "type": "integer" },
+      "priorEducation": { "type": "string", "enum": ["hs","some_college","aa","as","bs"] },
+      "earnedCredits": { "type": "integer", "minimum": 0 },
+      "preferOnline": { "type": "boolean" }
+    },
+    "required": ["goalId"]
+  }
+}

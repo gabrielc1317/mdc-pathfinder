@@ -1,0 +1,10 @@
+{
+  "institution": "Miami Dade College",
+  "in_state_per_credit": 118.22,
+  "out_state_per_credit": 403.64,
+  "tech_fee_per_credit": 3.00,
+  "term_fee_flat": 50.00,
+  "book_allowance_per_term": 300.00,
+  "assumptions_note": "Replace with official MDC values when confirmed.",
+  "program_overrides": { }
+}

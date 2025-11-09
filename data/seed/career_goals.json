@@ -1,0 +1,93 @@
+[
+  { "id": 1,  "name": "Software Engineer",
+    "preferred_tags": ["cs", "software", "data", "ai"],
+    "preferred_awards": ["AS", "BS", "BAS", "AA"] },
+
+  { "id": 2,  "name": "Web/Animation Artist",
+    "preferred_tags": ["animation", "design", "game"],
+    "preferred_awards": ["AS", "AA"] },
+
+  { "id": 3,  "name": "AI/ML Engineer",
+    "preferred_tags": ["ai", "data", "cs"],
+    "preferred_awards": ["AS", "BS", "BAS", "AA"] },
+
+  { "id": 4,  "name": "Architect",
+    "preferred_tags": ["architecture", "design"],
+    "preferred_awards": ["AA", "AS", "BS"] },
+
+  { "id": 5,  "name": "Aviation Maintenance Manager",
+    "preferred_tags": ["aviation", "management"],
+    "preferred_awards": ["AS", "BAS"] },
+
+  { "id": 6,  "name": "Biomedical Equipment Technician",
+    "preferred_tags": ["biomedical", "electronics"],
+    "preferred_awards": ["AS"] },
+
+  { "id": 7,  "name": "Biotechnology Lab Technician",
+    "preferred_tags": ["biotech", "biology", "chemistry"],
+    "preferred_awards": ["AS"] },
+
+  { "id": 8,  "name": "Construction Manager",
+    "preferred_tags": ["construction", "architecture", "business"],
+    "preferred_awards": ["AS", "BAS"] },
+
+  { "id": 9,  "name": "Business Administrator",
+    "preferred_tags": ["business", "management", "accounting"],
+    "preferred_awards": ["AS", "BAS", "AA"] },
+
+  { "id": 10, "name": "Business Intelligence Analyst",
+    "preferred_tags": ["data", "sql", "bi"],
+    "preferred_awards": ["AS", "BAS", "BS"] },
+
+  { "id": 11, "name": "Cybersecurity Analyst",
+    "preferred_tags": ["cybersecurity", "cs", "network"],
+    "preferred_awards": ["AS", "BAS", "BS"] },
+
+  { "id": 12, "name": "Accountant",
+    "preferred_tags": ["accounting", "business"],
+    "preferred_awards": ["AS", "AA", "BAS", "BS"] },
+
+  { "id": 13, "name": "Agricultural Scientist",
+    "preferred_tags": ["agriculture", "biology", "chemistry"],
+    "preferred_awards": ["AA", "AS", "BS"] },
+
+  { "id": 14, "name": "Anthropologist",
+    "preferred_tags": ["anthropology"],
+    "preferred_awards": ["AA", "BS"] },
+
+  { "id": 15, "name": "Biologist",
+    "preferred_tags": ["biology", "biotech"],
+    "preferred_awards": ["AA", "AS", "BS"] },
+
+  { "id": 16, "name": "Chemist",
+    "preferred_tags": ["chemistry", "biology"],
+    "preferred_awards": ["AA", "AS", "BS"] },
+
+  { "id": 17, "name": "Computer Scientist",
+    "preferred_tags": ["cs", "software", "data", "ai"],
+    "preferred_awards": ["AS", "BS", "AA"] },
+
+  { "id": 18, "name": "Economist",
+    "preferred_tags": ["economics", "business", "math"],
+    "preferred_awards": ["AA", "BS"] },
+
+  { "id": 19, "name": "Civil Engineer",
+    "preferred_tags": ["civil", "engineering"],
+    "preferred_awards": ["AA", "AS", "BS"] },
+
+  { "id": 20, "name": "Electrical Engineer",
+    "preferred_tags": ["electrical", "engineering", "cs"],
+    "preferred_awards": ["AA", "AS", "BS"] },
+
+  { "id": 21, "name": "Mechanical Engineer",
+    "preferred_tags": ["mechanical", "engineering"],
+    "preferred_awards": ["AA", "AS", "BS"] },
+
+  { "id": 22, "name": "Biomedical Engineer",
+    "preferred_tags": ["biomedical", "engineering", "biology"],
+    "preferred_awards": ["AA", "AS", "BS"] },
+
+  { "id": 23, "name": "Architectural Engineer",
+    "preferred_tags": ["architecture", "engineering", "construction"],
+    "preferred_awards": ["AA", "AS", "BS"] }
+]

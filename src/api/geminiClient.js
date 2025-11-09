@@ -1,34 +1,11 @@
-const BASE_URL = "http://127.0.0.1:8000";
-
-export async function getGoals() {
-  const res = await fetch(`${BASE_URL}/goals`);
-  if (!res.ok) throw new Error("Failed to fetch goals");
-  return res.json();
-}
-
-export async function getRecommendations({
-  goalId,
-  priorEducation,
-  earnedCredits,
-  preferOnline,
-  useAI = false,
-}) {
-  const endpoint = useAI ? "/recommendations/ai" : "/recommendations";
-  const res = await fetch(`${BASE_URL}${endpoint}`, {
+export async function invokeLLM({ prompt }) {
+  const res = await fetch("http://localhost:8000/api/invoke_llm", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      goalId,
-      priorEducation,
-      earnedCredits,
-      preferOnline,
-    }),
+    body: JSON.stringify({ prompt }),
   });
 
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`Request failed: ${res.status} - ${text}`);
-  }
-
-  return res.json();
+  const data = await res.json();
+  console.log("AI response:", data);
+  return data;
 }
